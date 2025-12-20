@@ -3,10 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hugo DA ROIT - Moniteur d'escalade DEJEPS & Maintenance SAE/SNE. Cours, grandes voies et expertise technique.">
-    <title>Hugo DA ROIT | Moniteur d'Escalade</title>
+
+    <title>Hugo Da Roit | Moniteur Escalade - De la Normandie aux Hautes-Alpes</title>
+    <meta name="description" content="Moniteur d'escalade DEJEPS basé dans les Hautes-Alpes. J'organise des stages pour les grimpeurs Normands et d'ailleurs. : Clécy, Les Andelys, La Fosse Arthour, Mortain, Presles, Gorges vu Verdon...">
+    <link rel="canonical" href="https://escalade.hdaroit.fr/">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://escalade.hdaroit.fr/">
+    <meta property="og:title" content="Hugo Da Roit - Escalade : Normandie & Hautes-Alpes">
+    <meta property="og:description" content="De la Normandie aux Écrins. Progressez en falaise et en grande voie avec un moniteur diplômé.">
+    <meta property="og:image" content="https://escalade.hdaroit.fr/img/cover.webp">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Hugo Da Roit - Moniteur Escalade",
+            "image": "https://escalade.hdaroit.fr/img/hugo.webp",
+            "@id": "https://escalade.hdaroit.fr/",
+            "url": "https://escalade.hdaroit.fr/",
+            "email": "escalade@hdaroit.fr",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hautes-Alpes",
+                "postalCode": "05000",
+                "addressRegion": "Provence-Alpes-Côte d'Azur",
+                "addressCountry": "FR"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 44.5,
+                "longitude": 6.0
+            },
+            "areaServed": [
+                "Hautes-Alpes",
+                "Normandie",
+                "Calvados",
+                "Manche",
+                "Seine-Maritime",
+                "Eure",
+                "Orne"
+            ],
+            "priceRange": "$$",
+            "description": "Moniteur d'escalade proposant des stages en Normandie et dans le Sud-Est."
+        }
+    </script>
+
     <style>
-        /* --- 1. VARIABLES & RESET --- */
         :root {
             --bg-color: #121212;
             --surface-color: #1e1e1e;
@@ -33,13 +77,16 @@
             overflow-x: hidden;
         }
 
-        /* --- 2. LAYOUT UTILS --- */
         .container { max-width: var(--max-width); margin: 0 auto; padding: 0 25px; position: relative; z-index: 2; }
 
         section { padding: 100px 0; border-bottom: 1px solid #2a2a2a; position: relative; background: var(--bg-color); z-index: 10; }
         section:last-of-type { border-bottom: none; }
 
         h1, h2, h3, h4 { color: #fff; font-weight: 700; line-height: 1.2; }
+
+        h1 { font-size: 3.5rem; margin-bottom: 20px; text-shadow: 0 4px 20px rgba(0,0,0,0.8); }
+        .h1-sub { display: block; font-size: 0.5em; font-weight: 400; color: var(--accent); margin-top: 10px; letter-spacing: 1px;}
+
         h2 { font-size: 2.5rem; margin-bottom: 50px; border-left: 5px solid var(--accent); padding-left: 20px; }
         h3 { font-size: 1.4rem; margin-bottom: 15px; color: #fff; }
         p { margin-bottom: 1.5rem; color: var(--text-muted); }
@@ -47,7 +94,6 @@
         a { text-decoration: none; color: inherit; transition: 0.2s; }
         img { max-width: 100%; display: block; border-radius: var(--radius); background-color: #2a2a2a; }
 
-        /* --- 3. NAVBAR --- */
         .navbar {
             position: fixed; top: 0; left: 0; right: 0;
             height: var(--nav-height);
@@ -58,11 +104,10 @@
             display: flex; align-items: center;
         }
         .nav-inner { width: 100%; display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 800; font-size: 1.1rem; letter-spacing: 1px; color: #fff; }
+        .logo { font-weight: 800; font-size: 1.1rem; letter-spacing: 1px; color: #fff; text-transform: uppercase;}
         .nav-links a { margin-left: 25px; font-size: 0.95rem; font-weight: 500; }
         .nav-links a:hover { color: var(--accent); }
 
-        /* --- 4. HERO SECTION (Parallax) --- */
         #hero {
             position: relative;
             height: 100vh;
@@ -83,9 +128,8 @@
             background: rgba(0,0,0,0.4);
             z-index: 2;
         }
-        .hero-content { position: relative; z-index: 3; will-change: transform; }
-        .hero-content h1 { font-size: 4rem; margin-bottom: 20px; text-shadow: 0 4px 20px rgba(0,0,0,0.8); }
-        .hero-sub { font-size: 1.3rem; color: #f0f0f0; max-width: 700px; margin: 0 auto 30px; text-shadow: 0 2px 10px rgba(0,0,0,0.8);}
+        .hero-content { position: relative; z-index: 3; will-change: transform; padding: 0 15px; }
+        .hero-sub { font-size: 1.2rem; color: #f0f0f0; max-width: 700px; margin: 0 auto 30px; text-shadow: 0 2px 10px rgba(0,0,0,0.8);}
 
         .btn {
             display: inline-block; background: var(--accent); color: #121212;
@@ -94,7 +138,6 @@
         }
         .btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
 
-        /* --- 5. SEPARATEUR PARALLAX (BREAKER) --- */
         .breaker-section {
             position: relative; height: 30vh; overflow: hidden;
             display: flex; align-items: center; justify-content: center;
@@ -107,12 +150,10 @@
             background-color: #333;
             z-index: 1; will-change: transform;
         }
-        /* Images de fond */
         #breaker1-bg { background-image: url('./img/img1.webp'); }
         #breaker2-bg { background-image: url('./img/img2.webp'); }
 
 
-        /* --- 6. SECTIONS STANDARD --- */
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
         .about-img-container { height: 450px; overflow: hidden; border-radius: var(--radius); border: 1px solid #333; background: #222; }
         .about-img { width: 100%; height: 100%; object-fit: cover; }
@@ -124,11 +165,11 @@
             transition: transform 0.2s; display: flex; flex-direction: column;
         }
         .activity-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .activity-card h3 { color: var(--accent); margin-bottom: 10px; }
         .activity-card ul { margin-top: auto; }
         .activity-card ul li { padding-left: 20px; position: relative; margin-bottom: 8px; font-size: 0.9rem; }
         .activity-card ul li::before { content: "•"; color: var(--accent); position: absolute; left: 0; font-weight: bold; }
 
-        /* TABLEAU PRIX */
         .pricing-container {
             margin-top: 60px; background: var(--surface-color); padding: 40px;
             border-radius: var(--radius); border: 1px solid #333;
@@ -139,30 +180,28 @@
         .pricing-table tr:last-child td { border-bottom: none; }
         .pricing-table .price { text-align: right; color: var(--accent); font-weight: bold; font-family: monospace; font-size: 1.1rem; white-space: nowrap; }
 
-        /* DESTINATIONS */
         .destinations-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .dest-card { background: var(--surface-color); border-radius: var(--radius); overflow: hidden; border: 1px solid #333; }
         .dest-img-wrap { height: 220px; overflow: hidden; position: relative; background: #222; }
         .dest-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
         .dest-card:hover .dest-img { transform: scale(1.05); }
         .dest-content { padding: 25px; }
-        .dest-content h3 { color: var(--accent); }
+        .dest-content h3 { color: var(--accent); margin-bottom: 5px; }
+        .spot-list { margin-top: 15px; }
         .spot-list li { margin-bottom: 8px; display: flex; align-items: center; font-size: 0.9rem; border-bottom: 1px dashed #333; padding-bottom: 8px; }
         .spot-list li:last-child { border-bottom: none; }
         .spot-tag { margin-left: auto; color: #666; font-size: 0.8rem; background: #121212; padding: 2px 6px; border-radius: 4px; }
 
-        /* --- 7. FOOTER --- */
         .legal-section { background: #000; padding: 60px 0 20px 0; font-size: 0.85rem; color: #777; border-top: 1px solid #222; }
         .legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
         .legal-col h4 { color: #aaa; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; }
         .legal-link { color: #888; border-bottom: 1px dotted #444; }
         .legal-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
-        /* RESPONSIVE */
         @media (max-width: 768px) {
             .about-grid { grid-template-columns: 1fr; }
             .about-img-container { order: -1; height: 300px; }
-            h1 { font-size: 2.5rem !important; }
+            h1 { font-size: 2.2rem !important; }
             .nav-links { display: none; }
             .navbar { justify-content: center; }
             section { padding: 60px 0; }
@@ -176,10 +215,9 @@
     <div class="container nav-inner">
         <a href="#" class="logo">HUGO DA ROIT</a>
         <div class="nav-links">
-            <a href="#about">Présentation</a>
-            <a href="#activities">Activités</a>
-            <a href="#destinations">Lieux</a>
-            <a href="#gallery">Galerie</a>
+            <a href="#about">Le Moniteur</a>
+            <a href="#activities">Stages & Coaching</a>
+            <a href="#destinations">Normandie & Alpes</a>
             <a href="#contact" style="color:var(--accent)">Contact</a>
         </div>
     </div>
@@ -191,9 +229,10 @@
     </div>
     <div class="parallax-overlay"></div>
     <div class="container hero-content" id="hero-text">
-        <h1>L'Escalade, simplement.</h1>
-        <p class="hero-sub">Diplômé d'État. Je vous accompagne vers l'autonomie, la performance et le plaisir. En salle, en falaise, près de chez vous, en France ou à l'étranger.</p>
-        <a href="#contact" class="btn">Contact</a>
+        <h1>L'Escalade, simplement.<span class="h1-sub">Des falaises Normandes aux sommets Alpins</span></h1>
+
+        <p class="hero-sub">Diplômé d'État. J'accueille les grimpeurs (Normands et d'ailleurs) dans mon camp de base des Hautes-Alpes pour des stages d'exception, ou directement sur vos falaises.</p>
+        <a href="#contact" class="btn">Organiser une sortie</a>
     </div>
 </header>
 
@@ -203,10 +242,13 @@
             <div class="about-text">
                 <h2>Qui suis-je ?</h2>
                 <p>
-                    Bonjour, je suis <strong>Hugo Da Roit</strong>. Moniteur d'escalade diplômé d'État (DEJEPS Escalade en Milieux Naturels) et ingénieur en informatique.
+                    Bonjour, je suis <strong>Hugo Da Roit</strong>. DE Moniteur d'escalade et ingénieur en informatique.
                 </p>
                 <p>
-                    Mon parcours est double : issu de la tech, j'ai choisi de faire de ma passion mon second métier. Cette rigueur influence ma pédagogie : structurée, analytique, mais toujours centrée sur l'humain.
+                    <strong>Mon histoire ?</strong> J'ai fait mes armes en Normandie, sur les falaises de bord de Seine, à Clécy, Mortain ainsi que sur les falaises du Cotentin. Aujourd'hui installé au cœur des montagnes dans les <strong>Hautes-Alpes (05)</strong>, je n'oublie pas d'où je viens.
+                </p>
+                <p>
+                    Ma mission est simple : faire le pont entre la <strong>Normandie</strong> et les <strong>Alpes</strong>. J'organise des stages pour vous faire découvrir les grandes voies mythiques (Ailefroide, Verdon, Écrins) et je reviens régulièrement encadrer sur nos terres normandes.
                 </p>
                 <div style="margin-top: 25px; padding: 20px; background: #1a1a1a; border-radius: 8px; border-left: 3px solid var(--accent);">
                     <ul style="font-size: 0.9rem; color: #bbb; line-height: 1.8;">
@@ -216,7 +258,7 @@
                 </div>
             </div>
             <div class="about-img-container">
-                <img src="./img/hugo.webp" alt="Hugo Da Roit" class="about-img" loading="lazy">
+                <img src="./img/hugo.webp" alt="Hugo Da Roit Moniteur Escalade Hautes Alpes" class="about-img" loading="lazy">
             </div>
         </div>
     </div>
@@ -224,188 +266,158 @@
 
 <section id="activities">
     <div class="container">
-        <h2>Compétences & Services</h2>
+        <h2>Stages & Prestations</h2>
 
         <div class="activities-grid">
 
             <div class="activity-card">
-                <h3>🧗 Initiation Falaise</h3>
-                <p>Vos premières sensations verticales en sécurité.</p>
+                <h3>🏔 Stages Grandes Voies</h3>
+                <p>Immersion dans le Sud-Est</p>
                 <ul>
-                    <li>Découverte ludique du matériel et des nœuds</li>
-                    <li>Apprendre à s'assurer et grimper en moulinette</li>
-                    <li>Prendre confiance et gérer l'appréhension du vide</li>
+                    <li>Lieu : Ailefroide, Briançon, Presles, Verdon, Calanques</li>
+                    <li>Objectif : Autonomie en plusieurs longueurs</li>
+                    <li>Public : Grimpeurs de salle ou falaise</li>
                 </ul>
             </div>
 
             <div class="activity-card">
-                <h3>⚡ Perfectionnement</h3>
-                <p>Optimisation de la performance (du 6a au 8ème degré).</p>
+                <h3>🧗 Coaching Falaise</h3>
+                <p>Perfectionnement technique</p>
                 <ul>
-                    <li>Tactique, lecture de voie et gestion de l'effort</li>
-                    <li>Préparation mentale et école de vol (chute)</li>
-                    <li>Planification d'entraînement & analyse vidéo</li>
+                    <li>Sites : Normandie ou Sud-Est selon période</li>
+                    <li>Tactique, mental et école de vol</li>
+                    <li>Du débutant à l'expert</li>
                 </ul>
             </div>
 
             <div class="activity-card">
-                <h3>🏔 Grandes Voies</h3>
-                <p>Le voyage vertical sur plusieurs longueurs.</p>
+                <h3>🚌 Club</h3>
+                <p>Encadrement de séjours pour clubs</p>
                 <ul>
-                    <li>Logistique de paroi (relais, rappels, hissage)</li>
-                    <li>Gestion de l'ambiance et du "gaz"</li>
-                    <li>Immersion totale le temps d'une journée</li>
+                    <li>Logistique escalade et encadrement complet</li>
+                    <li>Découverte des spots majeurs du Sud</li>
+                    <li>Ambiance conviviale et sécurité</li>
                 </ul>
             </div>
 
             <div class="activity-card">
-                <h3>🛠 Terrain d'Aventure</h3>
-                <p>Grimper sur des sites sauvages et préservés.</p>
+                <h3>🛠 Terrain d'Aventure (Trad)</h3>
+                <p>L'art de la protection sur coinceurs</p>
                 <ul>
-                    <li>Accès à des itinéraires uniques et non-aseptisés</li>
-                    <li>L'art de la protection (pose de friends/coinceurs)</li>
-                    <li>Sécurité avancée en milieu naturel</li>
+                    <li>Pose de friends à Annot, Flamanville, Jersey, ...</li>
+                    <li>Sécurité en terrain non aseptisé</li>
+                    <li>Pour toucher l'essence même de l'escalade</li>
                 </ul>
             </div>
 
             <div class="activity-card">
                 <h3>🆘 Sécurité & Réchappe</h3>
-                <p>Devenez un grimpeur autonome et responsable.</p>
+                <p>Formation vers l'autonomie totale</p>
                 <ul>
-                    <li>Techniques de réchappe et remontée sur corde</li>
-                    <li>Mouflage et aide au second en difficulté</li>
-                    <li>Gestion de crise et premiers secours verticaux</li>
+                    <li>Remontée sur corde et mouflage</li>
+                    <li>Gestion des incidents en paroi</li>
+                    <li>Prérequis pour la grande voie</li>
                 </ul>
             </div>
 
             <div class="activity-card">
-                <h3>🤝 Entreprises & Cohésion</h3>
-                <p>L'escalade comme vecteur de confiance.</p>
+                <h3>🔧 Expertise Technique</h3>
+                <p>Services aux collectivités et pros.</p>
                 <ul>
-                    <li>Gestion du stress et communication en binôme</li>
-                    <li>Ateliers de confiance et prise de responsabilité</li>
-                    <li>Format sur-mesure (Séminaire / Afterwork)</li>
-                </ul>
-            </div>
-
-            <div class="activity-card">
-                <h3>💻 Formation & Tech</h3>
-                <p>Pour Clubs, Comités & Ligues.</p>
-                <ul>
-                    <li>Formation bénévoles & salariés (Gestion EPI / SNE)</li>
-                    <li>Audit & modernisation des outils de gestion</li>
-                    <li>Développement web & solutions sur-mesure</li>
-                </ul>
-            </div>
-
-            <div class="activity-card">
-                <h3>🔧 Maintenance SAE & SNE</h3>
-                <p>Expertise technique pour structures et falaises.</p>
-                <ul>
-                    <li><strong>SAE :</strong> Contrôle EPI, prises, structure.</li>
-                    <li><strong>SNE :</strong> Purge, sécurisation, ancrages.</li>
-                    <li>Rapports de sécurité officiels.</li>
-                </ul>
-            </div>
-
-            <div class="activity-card">
-                <h3>🦄 Générateur d'Excuses</h3>
-                <p>Pour justifier vos échecs avec panache.</p>
-                <ul>
-                    <li>"Il fait trop humide" ou "Il fait trop chaud"</li>
-                    <li>"C'est la faute de l'assureur" (Classique)</li>
-                    <li>Certification officielle "C'était mieux avant"</li>
+                    <li>Audit et maintenance SAE/SNE</li>
+                    <li>Formation des bénévoles de clubs</li>
+                    <li>Outils numériques de gestion</li>
                 </ul>
             </div>
 
         </div>
 
         <div class="pricing-container">
-            <h3 style="text-align: center; color: var(--accent);">Tarifs indicatifs</h3>
+            <h3 style="text-align: center; color: var(--accent);">Tarifs Indicatifs</h3>
             <table class="pricing-table">
-                <tr><td>Cours particulier (demi-journée)</td><td class="price">150 €</td></tr>
-                <tr><td>Grande voie (journée / Cordée)</td><td class="price">dès 250 €</td></tr>
-                <tr><td>Stage collectif (par personne)</td><td class="price">dès 40 €</td></tr>
-                <tr><td>Séminaire / Team building</td><td class="price">Sur devis</td></tr>
-                <tr><td>Formation / Audit</td><td class="price">Sur devis</td></tr>
+                <tr><td>Engagement journée (Grande Voie)</td><td class="price">dès 260 €</td></tr>
+                <tr><td>Cours particulier (Demi-journée)</td><td class="price">160 €</td></tr>
+                <tr><td>Stage collectif (Semaine)</td><td class="price">Sur devis</td></tr>
+                <tr><td>Encadrement Club / Groupe</td><td class="price">Sur devis</td></tr>
             </table>
         </div>
     </div>
 </section>
 
 <div class="breaker-section" id="breaker1">
-    <div class="breaker-bg" id="breaker1-bg"></div>
+    <div class="breaker-bg" id="breaker1-bg" title="Escalade Hautes Alpes"></div>
 </div>
 
 <section id="destinations">
     <div class="container">
-        <h2>Destinations</h2>
-        <p>Mon terrain de jeu ne se limite pas aux SAE. Je vous emmène là où le rocher est roi, c'est là où nous nous amusons le plus !</p>
+        <h2>Terrains de jeux</h2>
+        <p>Du granit Normand au calcaire Alpin. Je vous guide sur les meilleurs spots.</p>
         <div class="destinations-grid">
 
             <div class="dest-card">
                 <div class="dest-img-wrap">
-                    <img src="./img/normandie.webp" alt="Escalade Normandie" class="dest-img" loading="lazy">
+                    <img src="./img/normandie.webp" alt="Escalade Clécy Normandie" class="dest-img" loading="lazy">
                 </div>
                 <div class="dest-content">
                     <h3>Normandie</h3>
-                    <p style="font-size:0.9rem">Le camp de base. Technique et historique.</p>
+                    <p style="font-size:0.9rem">Là où tout commence. Idéal pour l'initiation et le Trad.</p>
                     <ul class="spot-list">
-                        <li>Clécy <span class="spot-tag">Calvados</span></li>
-                        <li>Mortain / La Fosse Arthour <span class="spot-tag">Manche</span></li>
-                        <li>Flamanville <span class="spot-tag">Le trad</span></li>
-                        <li>Les Andelys <span class="spot-tag">La base</span></li>
+                        <li>Clécy / Suisse Normande <span class="spot-tag">14</span></li>
+                        <li>Mortain / La Fosse Arthour <span class="spot-tag">50</span></li>
+                        <li>Les Andelys <span class="spot-tag">27</span></li>
+                        <li>Flamanville <span class="spot-tag">50</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="dest-card">
                 <div class="dest-img-wrap">
-                    <img src="./img/sud.webp" alt="Escalade Sud Est" class="dest-img" loading="lazy">
+                    <img src="./img/sud.webp" alt="Escalade Hautes Alpes Ecrins Sud-Est" class="dest-img" loading="lazy">
                 </div>
                 <div class="dest-content">
                     <h3>Sud-Est</h3>
-                    <p style="font-size:0.9rem">Les sites de grandes voies classiques de France.</p>
+                    <p style="font-size:0.9rem">Mon camp de base. Le paradis de la grimpe en France.</p>
                     <ul class="spot-list">
-                        <li>Gorges du Verdon <span class="spot-tag">Mythique</span></li>
-                        <li>Calanques / Canaille <span class="spot-tag">Marseille</span></li>
-                        <li>Presles <span class="spot-tag">Sportif</span></li>
-                        <li>Et tant d'autres...</li>
+                        <li>Ailefroide / Écrins <span class="spot-tag">Granite</span></li>
+                        <li>Briançonnais <span class="spot-tag">Solaire</span></li>
+                        <li>Baronnies <span class="spot-tag">Mondial</span></li>
+                        <li>Orpierre <span class="spot-tag">Classique</span></li>
                     </ul>
                 </div>
             </div>
 
             <div class="dest-card">
                 <div class="dest-img-wrap">
-                    <img src="./img/voyage.webp" alt="Escalade Voyage" class="dest-img" loading="lazy">
+                    <img src="./img/voyage.webp" alt="Voyage Escalade Mythique" class="dest-img" loading="lazy">
                 </div>
                 <div class="dest-content">
-                    <h3>Voyages & Aventure</h3>
-                    <p style="font-size:0.9rem">Grimpe et dépaysement !</p>
+                    <h3>Sites Mythiques</h3>
+                    <p style="font-size:0.9rem">Les pèlerinages verticaux incontournables.</p>
                     <ul class="spot-list">
-                        <li>Italie / Corse / Sardaigne <span class="spot-tag">Soleil</span></li>
-                        <li>Maroc (Taghia/Todra) <span class="spot-tag">Atlas</span></li>
-                        <li>Trad à Jersey <span class="spot-tag">Crack</span></li>
+                        <li>Gorges du Verdon <span class="spot-tag">Légende</span></li>
+                        <li>Calanques de Marseille <span class="spot-tag">Mer</span></li>
+                        <li>Annot <span class="spot-tag">Trad</span></li>
+                        <li>Vercors / Presles <span class="spot-tag">Gaz</span></li>
+                        <li>Voyages (Corse, Maroc, ...) <span class="spot-tag">Aventure</span></li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
 
 <div class="breaker-section" id="breaker2">
-    <div class="breaker-bg" id="breaker2-bg"></div>
+    <div class="breaker-bg" id="breaker2-bg" title="Grande Voie Corse"></div>
 </div>
 
 <section id="contact" style="background-color: var(--surface-color); border:none;">
     <div class="container" style="text-align: center; max-width: 600px;">
-        <h2>Contact</h2>
-        <p>Une question ?</p>
+        <h2>Prêt à grimper ?</h2>
+        <p>Que vous soyez un club normand cherchant un stage dans le sud, ou un particulier dans le 05, contactez-moi.</p>
         <div style="margin: 40px 0; display:flex; flex-direction: column; gap: 15px;">
             <a href="mailto:escalade@hdaroit.fr" class="btn">✉️ escalade@hdaroit.fr</a>
-            <a href="https://www.instagram.com/hugo.daroit/" target="_blank" style="color: #fff; font-weight: bold; padding: 10px; border: 1px solid #333; border-radius: 8px;">
-                Suivre sur Instagram @hugo.daroit
+            <a href="https://www.instagram.com/hugo.daroit/" target="_blank" style="color: #fff; font-weight: bold; padding: 10px; border: 1px solid #333; border-radius: 8px; display:block;">
+                Suivre mes aventures @hugo.daroit
             </a>
         </div>
     </div>
@@ -417,26 +429,19 @@
             <div class="legal-col">
                 <h4>Entreprise</h4>
                 <p><strong>Dénomination :</strong> ESCADEV</p>
-                <p><strong>Forme :</strong> SARL au capital de 1 500 €</p>
-                <p><strong>Siège :</strong> 8 Rue Grand Veneur, 14930 MALTOT</p>
-                <p><strong>SIRET :</strong> <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/escadev-908926546" target="_blank" class="legal-link">908 926 546 00015</a></p>
+                <p><strong>Siège :</strong> Hautes-Alpes (05)</p> <p><strong>SIRET :</strong> <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/escadev-908926546" target="_blank" class="legal-link">908 926 546 00015</a></p>
             </div>
             <div class="legal-col">
-                <h4>Activité Réglementée</h4>
-                <p><strong>Éducateur Sportif :</strong> Hugo DA ROIT</p>
+                <h4>Encadrement</h4>
+                <p><strong>Moniteur :</strong> Hugo DA ROIT</p>
                 <p><strong>Carte Pro :</strong> <a href="https://recherche-educateur.sports.gouv.fr/CartePro/01422ED0045" target="_blank" class="legal-link">01422ED0045</a></p>
-                <p><strong>Qualification :</strong> DEJEPS Escalade MN</p>
-                <p><strong>Assurance :</strong> RC Pro Exploitation</p>
+                <p><strong>Zone :</strong> 05 / 14 / France</p>
             </div>
             <div class="legal-col">
                 <h4>Info</h4>
-                <p><strong>Responsable :</strong> Hugo DA ROIT</p>
-                <p><strong>Hébergeur :</strong> Cloudflare</p>
-                <p><strong>Données :</strong> Site sans cookies.</p>
+                <p>&copy; <span id="year"></span> Hugo DA ROIT</p>
+                <p>Site sans cookies ni traceurs.</p>
             </div>
-        </div>
-        <div style="text-align: center; border-top: 1px solid #222; padding-top: 20px; color: #555;">
-            <p>&copy; <span id="year"></span> Hugo DA ROIT (Escadev).</p>
         </div>
     </div>
 </footer>
@@ -461,7 +466,6 @@
 
     function updateParallax() {
         const scrollY = window.pageYOffset;
-
         if (scrollY < window.innerHeight) {
             heroBg.style.transform = `translate3d(0, ${scrollY * 0.5}px, 0)`;
             heroText.style.transform = `translate3d(0, ${scrollY * 0.3}px, 0)`;

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://escalade.hdaroit.fr/</loc>
+    <lastmod>2025-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/cover.webp</image:loc>
+      <image:title>Stage Escalade Hautes-Alpes et Normandie</image:title>
+      <image:caption>Moniteur d'escalade organisant des stages des falaises normandes aux sommets des Alpes</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/hugo.webp</image:loc>
+      <image:title>Hugo Da Roit - Moniteur Escalade DEJEPS</image:title>
+      <image:caption>Encadrement professionnel en escalade et grandes voies</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/normandie.webp</image:loc>
+      <image:title>Escalade en Normandie : Clécy, Mortain, Les Andelys</image:title>
+      <image:caption>Sites d'escalade en Normandie : Suisse Normande, Fosse Arthour et falaises de Seine</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/sud.webp</image:loc>
+      <image:title>Escalade Hautes-Alpes : Ailefroide et Briançon</image:title>
+      <image:caption>Stages grandes voies dans les Écrins, Orpierre et le Briançonnais</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/voyage.webp</image:loc>
+      <image:title>Grandes Voies Verdon, Presles et Calanques</image:title>
+      <image:caption>Voyages escalade sur les sites majeurs : Verdon, Calanques, Corse et Annot</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/img1.webp</image:loc>
+      <image:title>Escalade Falaise Hautes-Alpes</image:title>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://escalade.hdaroit.fr/img/img2.webp</image:loc>
+      <image:title>Grande Voie Montagne Corse</image:title>
+    </image:image>
+
+  </url>
+</urlset>
