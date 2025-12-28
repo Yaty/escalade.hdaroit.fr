@@ -17,11 +17,21 @@
     <link rel="canonical" href="https://escalade.hdaroit.fr/">
     <meta name="robots" content="index, follow">
 
+    <meta property="og:site_name" content="Hugo Da Roit | Moniteur Escalade">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://escalade.hdaroit.fr/">
     <meta property="og:title" content="Hugo Da Roit - Escalade : Normandie & Hautes-Alpes">
     <meta property="og:description" content="De la Normandie aux Écrins. Progressez en falaise et en grande voie avec un moniteur diplômé.">
     <meta property="og:image" content="https://escalade.hdaroit.fr/img/cover.webp">
+    <meta property="og:image:alt" content="Hugo Da Roit en grande voie">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hugo Da Roit - Escalade : Normandie & Hautes-Alpes">
+    <meta name="twitter:description" content="Stages falaise et grandes voies. De la Normandie aux sommets des Alpes.">
+    <meta name="twitter:image" content="https://escalade.hdaroit.fr/img/cover.webp">
 
     <script type="application/ld+json">
         {
@@ -202,8 +212,7 @@
 
         .legal-section { background: #000; padding: 60px 0 20px 0; font-size: 0.85rem; color: #777; border-top: 1px solid #222; }
         .legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .legal-col h4 { color: #aaa; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; }
-        .legal-link { color: #888; border-bottom: 1px dotted #444; }
+        .legal-col h3 { color: #aaa; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 15px; letter-spacing: 1px; }        .legal-link { color: #888; border-bottom: 1px dotted #444; }
         .legal-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
         @media (max-width: 768px) {
@@ -221,12 +230,12 @@
 
 <nav class="navbar">
     <div class="container nav-inner">
-        <a href="#" class="logo">HUGO DA ROIT</a>
+        <a href="#" class="logo" title="Retour à l'accueil - Hugo Da Roit">HUGO DA ROIT</a>
         <div class="nav-links">
-            <a href="#about">Le Moniteur</a>
-            <a href="#activities">Stages & Coaching</a>
-            <a href="#destinations">Normandie & Alpes</a>
-            <a href="#contact" style="color:var(--accent)">Contact</a>
+            <a href="#about" title="Présentation du moniteur">Le Moniteur</a>
+            <a href="#activities" title="Voir les stages et le coaching">Stages & Coaching</a>
+            <a href="#destinations" title="Découvrir les spots en Normandie et Alpes">Normandie & Alpes</a>
+            <a href="#contact" style="color:var(--accent)" title="Me contacter">Contact</a>
         </div>
     </div>
 </nav>
@@ -240,7 +249,7 @@
         <h1>L'Escalade, simplement.<span class="h1-sub">Des falaises Normandes aux sommets Alpins</span></h1>
 
         <p class="hero-sub">Diplômé d'État. J'accueille les grimpeurs (Normands et d'ailleurs) dans mon camp de base des Hautes-Alpes pour des stages d'exception, ou directement sur vos falaises.</p>
-        <a href="#contact" class="btn">Organiser une sortie</a>
+        <a href="#contact" class="btn" title="Réserver votre sortie escalade">Organiser une sortie</a>
     </div>
 </header>
 
@@ -256,12 +265,12 @@
                     <strong>Mon histoire ?</strong> J'ai fait mes armes en Normandie, sur les falaises de bord de Seine, à Clécy, Mortain ainsi que sur les falaises du Cotentin. Aujourd'hui installé au cœur des montagnes dans les <strong>Hautes-Alpes (05)</strong>, je n'oublie pas d'où je viens.
                 </p>
                 <p>
-                    Ma mission est simple : faire le pont entre la <strong>Normandie</strong> et les <strong>Alpes</strong>. J'organise des stages pour vous faire découvrir les grandes voies mythiques (Ailefroide, Verdon, Écrins) et je reviens régulièrement encadrer sur nos terres normandes.
+                    Ma mission ? Vous faire pratiquer l'escalade <strong>simplement</strong>, sans prise de tête mais avec rigueur. Je fais le pont entre les falaises de mon enfance et les grands <strong>sommets alpins</strong> où je vis aujourd'hui.
                 </p>
                 <div style="margin-top: 25px; padding: 20px; background: #1a1a1a; border-radius: 8px; border-left: 3px solid var(--accent);">
                     <ul style="font-size: 0.9rem; color: #bbb; line-height: 1.8;">
                         <li>✔ DEJEPS Escalade en Milieux Naturels</li>
-                        <li>✔ Carte Pro : <a href="https://recherche-educateur.sports.gouv.fr/CartePro/01422ED0045" target="_blank" class="legal-link">01422ED0045</a></li>
+                        <li>✔ Carte Pro : <a href="https://recherche-educateur.sports.gouv.fr/CartePro/01422ED0045" target="_blank" class="legal-link" title="Vérifier ma carte professionnelle sur le site du Ministère">01422ED0045</a></li>
                     </ul>
                 </div>
             </div>
@@ -383,9 +392,8 @@
                     <img src="./img/sud.webp" alt="Escalade Hautes Alpes Ecrins Sud-Est" class="dest-img" loading="lazy">
                 </div>
                 <div class="dest-content">
-                    <h3>Sud-Est</h3>
-                    <p style="font-size:0.9rem">Mon camp de base. Le paradis de la grimpe en France.</p>
-                    <ul class="spot-list">
+                    <h3>Sud-Est & Alpes</h3>
+                    <p style="font-size:0.9rem">Mon camp de base. Des vallées ensoleillées aux plus hauts <strong>sommets</strong>.</p>                    <ul class="spot-list">
                         <li>Ailefroide / Écrins <span class="spot-tag">Granite</span></li>
                         <li>Briançonnais <span class="spot-tag">Solaire</span></li>
                         <li>Baronnies <span class="spot-tag">Mondial</span></li>
@@ -423,8 +431,8 @@
         <h2>Prêt à grimper ?</h2>
         <p>Que vous soyez un club normand cherchant un stage dans le sud, ou un particulier dans le 05, contactez-moi.</p>
         <div style="margin: 40px 0; display:flex; flex-direction: column; gap: 15px;">
-            <a href="mailto:escalade@hdaroit.fr" class="btn">✉️ escalade@hdaroit.fr</a>
-            <a href="https://www.instagram.com/hugo.daroit/" target="_blank" style="color: #fff; font-weight: bold; padding: 10px; border: 1px solid #333; border-radius: 8px; display:block;">
+            <a href="mailto:escalade@hdaroit.fr" class="btn" title="Envoyer un email à Hugo Da Roit">✉️ escalade@hdaroit.fr</a>
+            <a href="https://www.instagram.com/hugo.daroit/" target="_blank" style="color: #fff; font-weight: bold; padding: 10px; border: 1px solid #333; border-radius: 8px; display:block;" title="Visiter mon profil Instagram">
                 Suivre mes aventures @hugo.daroit
             </a>
         </div>
@@ -435,18 +443,19 @@
     <div class="container">
         <div class="legal-grid">
             <div class="legal-col">
-                <h4>Entreprise</h4>
+                <h3>Entreprise</h3>
                 <p><strong>Dénomination :</strong> ESCADEV</p>
-                <p><strong>Siège :</strong> Hautes-Alpes (05)</p> <p><strong>SIRET :</strong> <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/escadev-908926546" target="_blank" class="legal-link">908 926 546 00015</a></p>
+                <p><strong>Siège :</strong> Hautes-Alpes (05)</p>
+                <p><strong>SIRET :</strong> <a href="https://annuaire-entreprises.data.gouv.fr/entreprise/escadev-908926546" target="_blank" class="legal-link" title="Fiche entreprise ESCADEV sur data.gouv.fr">908 926 546 00015</a></p>
             </div>
             <div class="legal-col">
-                <h4>Encadrement</h4>
+                <h3>Encadrement</h3>
                 <p><strong>Moniteur :</strong> Hugo DA ROIT</p>
-                <p><strong>Carte Pro :</strong> <a href="https://recherche-educateur.sports.gouv.fr/CartePro/01422ED0045" target="_blank" class="legal-link">01422ED0045</a></p>
+                <p><strong>Carte Pro :</strong> <a href="https://recherche-educateur.sports.gouv.fr/CartePro/01422ED0045" target="_blank" class="legal-link" title="Vérification officielle Éducateur Sportif">01422ED0045</a></p>
                 <p><strong>Zone :</strong> 05 / 14 / France</p>
             </div>
             <div class="legal-col">
-                <h4>Info</h4>
+                <h3>Info</h3>
                 <p>&copy; <span id="year"></span> Hugo DA ROIT</p>
                 <p>Site sans cookies ni traceurs.</p>
             </div>
